@@ -1,0 +1,53 @@
+﻿@model IEnumerable<mvc.Repository.Models.Funcionario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-controller="Funcionarios" asp-action="Index">
+    <p>
+        Nome: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FuncionarioNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FuncionarioDatadenascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FuncionarioSalario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuncionarioNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuncionarioDatadenascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuncionarioSalario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FuncionarioId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FuncionarioId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FuncionarioId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

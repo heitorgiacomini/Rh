@@ -1,0 +1,61 @@
+﻿@model IEnumerable<mvc.Repository.Models.Filho>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Filhoes" asp-action="Index">
+    <p>
+        Nome: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FilhoNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FilhoDatadenascimento)
+            </th>
+            <th>
+                Mae
+            </th>
+            <th>
+                Pai
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilhoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilhoDatadenascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilhoFuncionarioMaeNavigation.FuncionarioNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilhoFuncionarioPaiNavigation.FuncionarioNome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FilhoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FilhoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FilhoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
