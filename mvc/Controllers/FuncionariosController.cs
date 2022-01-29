@@ -24,7 +24,7 @@ namespace mvc.Controllers
         public async Task<IActionResult> Index(string searchString)
         {
             var funcionarios = from m in _context.Funcionarios
-                         select m;
+                               select m;
             if (!String.IsNullOrEmpty(searchString))
             {
                 funcionarios = funcionarios.Where(s => s.FuncionarioNome!.Contains(searchString));
@@ -59,18 +59,25 @@ namespace mvc.Controllers
         {
             return View();
         }
-         
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("FuncionarioId,FuncionarioNome,FuncionarioDatadenascimento,FuncionarioSalario")] Funcionario funcionario)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(funcionario);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _context.Add(funcionario);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(funcionario);
             }
-            return View(funcionario);
+            catch (Exception er)
+            { 
+                return RedirectToAction(actionName: "Index");
+            }
         }
 
         // GET: Funcionarios/Edit/5
