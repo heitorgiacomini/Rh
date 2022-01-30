@@ -9427,11 +9427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\p\\net\\prova-crud-ef\\final\\mvc\\mvc.csproj",
+      "projectUniqueName": "C:\\p\\net\\teste\\Rh\\mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "C:\\p\\net\\prova-crud-ef\\final\\mvc\\mvc.csproj",
+      "projectPath": "C:\\p\\net\\teste\\Rh\\mvc\\mvc.csproj",
       "packagesPath": "C:\\Users\\unnamed\\.nuget\\packages\\",
-      "outputPath": "C:\\p\\net\\prova-crud-ef\\final\\mvc\\obj\\",
+      "outputPath": "C:\\p\\net\\teste\\Rh\\mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

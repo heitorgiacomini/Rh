@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using mvc.Models;
 using mvc.Repository;
 using mvc.Repository.Models;
 
@@ -68,17 +69,43 @@ namespace mvc.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    _context.Add(funcionario);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+
+                    var existefuncionario = _context
+                        .Funcionarios
+                        .Any(a => a.FuncionarioNome == funcionario.FuncionarioNome && a.FuncionarioSalario == funcionario.FuncionarioSalario);
+                    if (existefuncionario)
+                    {
+                        ErrorViewModel erro = new ErrorViewModel
+                        {
+                            RequestId = "Funcionario ja existe com este mesmo nome e salario"
+                        };
+                        return View("Error",erro);  
+                    }
+                    else
+                    {
+                        _context.Add(funcionario);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
                 }
                 return View(funcionario);
             }
             catch (Exception er)
-            { 
+            {
                 return RedirectToAction(actionName: "Index");
             }
         }
+
+
+
+
+
+
+
+
+
+
+
 
         // GET: Funcionarios/Edit/5
         public async Task<IActionResult> Edit(int? id)

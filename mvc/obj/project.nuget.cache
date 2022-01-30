@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zzDJtV8Ua3utH38u3Ai90adXkYq/B5hXQnsH/UYRVCi8MLA9zoEjJsnKMMdc2NTeD1vAT10/8AJDbPO/k9sjlw==",
+  "dgSpecHash": "hHTJtjAEbIQBRaUtTPQBhM/NvYHKc205Hp4FXxG/U8fJlorjccnI3lHGXnvMyC8KmJo/wNqGBTljgwl7Nxw/Kg==",
   "success": true,
-  "projectFilePath": "C:\\p\\net\\prova-crud-ef\\final\\mvc\\mvc.csproj",
+  "projectFilePath": "C:\\p\\net\\teste\\Rh\\mvc\\mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\unnamed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\unnamed\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

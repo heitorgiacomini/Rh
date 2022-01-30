@@ -13,17 +13,17 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FuncionarioNome" class="control-label"></label>
+                <label asp-for="FuncionarioNome" class="control-label">Insira nome do funcionario</label>
                 <input asp-for="FuncionarioNome" class="form-control" />
                 <span asp-validation-for="FuncionarioNome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FuncionarioDatadenascimento" class="control-label"></label>
+                <label asp-for="FuncionarioDatadenascimento" class="control-label">Insira data de nascimento do funcionario</label>
                 <input asp-for="FuncionarioDatadenascimento" class="form-control" />
                 <span asp-validation-for="FuncionarioDatadenascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FuncionarioSalario" class="control-label"></label>
+                <label asp-for="FuncionarioSalario" class="control-label">Insira o salario do funcionario</label>
                 <input asp-for="FuncionarioSalario" class="form-control" />
                 <span asp-validation-for="FuncionarioSalario" class="text-danger"></span>
             </div>

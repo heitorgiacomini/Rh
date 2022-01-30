@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using mvc.Models;
 using mvc.Repository;
 using mvc.Repository.Models;
 
@@ -74,9 +75,19 @@ namespace mvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(filho);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (filho.FilhoFuncionarioMae == filho.FilhoFuncionarioPai || (filho.FilhoFuncionarioPai == null && filho.FilhoFuncionarioMae == null )) {
+                    ErrorViewModel erro = new ErrorViewModel
+                    {
+                        RequestId = "Pai e mae nao pode ser o mesmo ou Pai e mae não pode ser nulo."
+                    };
+                    return View("Error", erro);
+                }
+                else
+                {
+                    _context.Add(filho);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
             ViewData["FilhoFuncionarioMae"] = new SelectList(_context.Funcionarios, "FuncionarioId", "FuncionarioId", filho.FilhoFuncionarioMae);
             ViewData["FilhoFuncionarioPai"] = new SelectList(_context.Funcionarios, "FuncionarioId", "FuncionarioId", filho.FilhoFuncionarioPai);

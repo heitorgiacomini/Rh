@@ -13,22 +13,26 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FilhoNome" class="control-label"></label>
+                <label asp-for="FilhoNome" class="control-label">Insira o nome do filho</label>
                 <input asp-for="FilhoNome" class="form-control" />
                 <span asp-validation-for="FilhoNome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FilhoDatadenascimento" class="control-label"></label>
+                <label asp-for="FilhoDatadenascimento" class="control-label">Insira data de nascimento</label>
                 <input asp-for="FilhoDatadenascimento" class="form-control" />
                 <span asp-validation-for="FilhoDatadenascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FilhoFuncionarioPai" class="control-label"></label>
-                <select asp-for="FilhoFuncionarioPai" class ="form-control" asp-items="ViewBag.FilhoFuncionarioPai"></select>
+                <label asp-for="FilhoFuncionarioPai" class="control-label">Selecione o pai</label>
+                <select asp-for="FilhoFuncionarioPai" class ="form-control" asp-items="ViewBag.FilhoFuncionarioPai">
+                    <option selected></option>
+                </select>
             </div>
             <div class="form-group">
-                <label asp-for="FilhoFuncionarioMae" class="control-label"></label>
-                <select asp-for="FilhoFuncionarioMae" class ="form-control" asp-items="ViewBag.FilhoFuncionarioMae"></select>
+                <label asp-for="FilhoFuncionarioMae" class="control-label">Selecione a mae</label>
+                <select asp-for="FilhoFuncionarioMae" class ="form-control" asp-items="ViewBag.FilhoFuncionarioMae">
+                    <option selected></option>
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

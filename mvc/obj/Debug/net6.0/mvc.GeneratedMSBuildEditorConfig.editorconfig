@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mvc
 build_property.RootNamespace = mvc
-build_property.ProjectDir = C:\p\net\prova-crud-ef\final\mvc\
+build_property.ProjectDir = C:\p\net\teste\Rh\mvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\p\net\prova-crud-ef\final\mvc
+build_property.MSBuildProjectDirectory = C:\p\net\teste\Rh\mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Filhoes/Create.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Filhoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Filhoes/Delete.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Filhoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Filhoes/Details.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Filhoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Filhoes/Edit.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Filhoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Filhoes/Index.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Filhoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Funcionarios/Create.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Funcionarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Funcionarios/Delete.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Funcionarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Funcionarios/Details.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Funcionarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Funcionarios/Edit.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Funcionarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Funcionarios/Index.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Funcionarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Home/Index.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Home/Privacy.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Shared/Error.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/_ViewImports.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/_ViewStart.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/p/net/prova-crud-ef/final/mvc/Views/Shared/_Layout.cshtml]
+[C:/p/net/teste/Rh/mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x8p8g49oo3
