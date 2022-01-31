@@ -44,3 +44,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+//Scaffold-DbContext "{YOUR-CONNECTION-STRING-HERE}" Microsoft.EntityFrameWorkCore.SqlServer -outputdir Repository/Models -context {YOUR-DBCONTEXT-NAME-HERE}DbContext -contextdir Repository -DataAnnotations -Force
