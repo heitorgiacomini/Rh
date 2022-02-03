@@ -6,20 +6,12 @@ builder.Configuration.AddJsonFile("appsettings.json");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//builder.Services.AddScoped<IBloggerRepository, BloggerRepository>();
-
-
-
 var conf = builder.Configuration;
 //builder.Services.AddDbContext<Aspdotnetcore5DbContext>();
 builder.Services.AddDbContext<gcasppDbContext>(options => options.UseSqlServer(
     conf.GetConnectionString("gcasppDbContext")
     )
 );
-
-
-
-
 
 
 var app = builder.Build();
